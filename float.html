@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: burlywood;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        nav {
+            float: left;
+            background-color: beige;
+            width: 30%;
+            height: 450px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            width: 70%;
+            background-color: bisque;
+            padding: 10px;
+            height: 450px;
+            text-align: center;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(194, 149, 103);
+            text-align: center;
+            padding: 10px;
+            height: 100px;
+        }
+
+        @media only screen and (max-width: 400px)
+        {
+            nav, article {
+                float: left;
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Artikel 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Eu nisl nunc mi ipsum. Arcu dui vivamus arcu felis bibendum ut tristique et. Varius
+                quam quisque id diam. Porttitor rhoncus dolor purus non enim praesent. Est ultricies integer quis
+                auctor.</p>
+            <p>Integer vitae justo eget magna fermentum iaculis. Et ligula ullamcorper malesuada proin libero nunc.
+                Augue ut lectus arcu bibendum at varius vel pharetra. Eget nulla facilisi etiam dignissim diam quis enim
+                lobortis scelerisque. Elementum eu facilisis sed odio morbi. Interdum velit euismod in pellentesque.
+                Nisl purus in mollis nunc. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>This is footer</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    height: 400vh;
+}
+
+div.static {
+    border: 1px solid red;
+    margin: 30px;
+    padding: 10px;
+    position: static;
+    left: 50px;
+}
+
+div.relative {
+    border: 1px solid blue;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    height: 300px;
+}
+
+div.fixed {
+    border: 1px solid red;
+    margin: 30px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+}
+
+div.absolute {
+    border: 1px solid red;
+    margin: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+}
+
+div.absolute2 {
+    border: 1px solid orange;
+    margin: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 800px;
+}
+
+div.relative2 {
+    border: 1px solid magenta;
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    height: 300px;
+}
+
+div.sticky1 {
+    background-color: grey;
+    position: sticky;
+    color: white;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+}

@@ -1,0 +1,91 @@
+body {
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 80%;
+    margin-right: 30px;
+    z-index: 1;
+}
+
+.navbar-title {
+    padding: 10px;
+}
+
+.news {
+    margin: 30px;
+    padding: 10px;
+    position: absolute;
+    top: 200px;
+    background-color: bisque;
+}
+
+.content {
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    height: 300px;
+    background-color: beige;
+}
+
+.btntop {
+    background-color: black;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.pagetitle {
+    margin: 30px;
+    padding: 10px;
+    position: static;
+}
+
+.searchbar {
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    background-color: bisque;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 100px;
+    z-index: 1;
+    
+  }
+  
+  .block {
+    margin-left: 30px;
+  }
+
+  .block:after {
+    content: "";
+    display: table;
+    clear: both;
+    z-index: 1;
+    
+  }
+
+  .newsimage {
+    width: 200px;
+    height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+  }

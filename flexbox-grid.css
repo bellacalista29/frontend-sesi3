@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+.flex-container {
+    width: 100vw;
+    height: 400px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+*/
+
+.flex-container {
+    width: 100vw;
+    background-color: lightblue;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.box-flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-flex-container-left {
+    width: 30%;
+    
+    display: flex;
+  
+}
+
+.box-flex-container-right {
+    width: 70%;
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.box1 {
+    width: 100%;
+    height: 100px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(154, 180, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box3 {
+    width: 60%;
+    height: 50px;
+    background-color: rgb(142, 204, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    width: 40%;
+    height: 50px;
+    background-color: rgb(93, 172, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(78, 138, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-container {
+    display: grid;
+    background-color: lightseagreen;
+    padding: 10px;
+    grid-template-areas: 
+    "box1 box1 box2"
+    "box1 box1 box2"
+    "box3 box3 box3";
+}
+
+.grid-box1,
+.grid-box2,
+.grid-box3 {
+    background-color: aquamarine;
+    padding: 20px 0;
+}
+
+.grid-box1 {
+    grid-area: box1;
+    background-color: lightgreen;
+}
+
+.grid-box2 {
+    grid-area: box2;
+    background-color: rgb(77, 161, 77);
+}
+
+.grid-box3 {
+    grid-area: box3;
+    background-color: rgb(138, 200, 186);
+}
+
+.grid-example {
+    display: grid;
+    background-color: lightcoral;
+    padding: 10px;
+    grid-template-areas: 
+    "ebox1 ebox1 ebox1 ebox1 ebox1 ebox1 ebox1"
+    "ebox2 ebox2 ebox3 ebox3 ebox3 ebox4 ebox4"
+    "ebox2 ebox2 ebox5 ebox5 ebox5 ebox5 ebox5";
+}
+
+.example-box1,
+.example-box2,
+.example-box3,
+.example-box4,
+.example-box5 {
+    background-color: coral;
+    padding: 20px 0;
+}
+
+.example-box1 {
+    grid-area: ebox1;
+    background-color: pink;
+}
+
+.example-box2 {
+    grid-area: ebox2;
+    background-color: rgb(226, 162, 184);
+}
+
+.example-box3 {
+    grid-area: ebox3;
+    background-color: lightsalmon
+}
+
+.example-box4 {
+    grid-area: ebox4;
+    background-color: rgb(163, 137, 146);
+}
+
+.example-box5 {
+    grid-area: ebox5;
+    background-color: rgb(203, 165, 150)
+}
+
